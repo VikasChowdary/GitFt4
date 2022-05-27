@@ -1,0 +1,24 @@
+connector:
+  name: GitFt4Connector
+  identifier: GitFt4Connector
+  description:
+  orgIdentifier: default
+  projectIdentifier: GitFt4
+  type: Github
+  spec:
+    url: https://github.com/VikasChowdary/GitFt4
+    authentication:
+      type: Http
+      spec:
+        type: UsernameToken
+        spec:
+          username: VikasChowdary
+          tokenRef: account.patForGithub
+    apiAccess:
+      type: Token
+      spec:
+        tokenRef: account.patForGithub
+    delegateSelectors:
+    - acctgroup
+    executeOnDelegate: true
+    type: Repo
