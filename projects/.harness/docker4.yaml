@@ -1,0 +1,14 @@
+connector:
+  name: docker4
+  identifier: docker4
+  description:
+  orgIdentifier: default
+  projectIdentifier: GitFt4
+  type: DockerRegistry
+  spec:
+    dockerRegistryUrl: dockerTest.com
+    providerType: DockerHub
+    auth:
+      type: Anonymous
+    delegateSelectors:
+    - acctgroup
