@@ -1,0 +1,13 @@
+connector:
+  name: art4
+  identifier: art4
+  description:
+  orgIdentifier: default
+  projectIdentifier: GitFt4
+  type: Artifactory
+  spec:
+    artifactoryServerUrl: test.com
+    auth:
+      type: Anonymous
+    delegateSelectors:
+    - acctgroup
